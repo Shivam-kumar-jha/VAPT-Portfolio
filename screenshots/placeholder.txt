@@ -1,0 +1,1 @@
+This folder contains evidence screenshots from the MS17-010 exploitation lab.
