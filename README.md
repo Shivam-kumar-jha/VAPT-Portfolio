@@ -1,175 +1,96 @@
-# 📋 VAPT Portfolio
+# VAPT Portfolio
 
-**Real-world Vulnerability Assessment & Penetration Testing Case Studies**
+Professional penetration testing and vulnerability assessment case studies demonstrating real-world exploitation techniques, methodical security assessments, and business-aligned remediation strategies.
 
-Hands-on penetration testing documentation with **executive summaries, technical findings, CVSS scoring, and NIST-aligned remediation strategies**.
+## 🎯 Overview
 
----
+This portfolio showcases practical VAPT (Vulnerability Assessment and Penetration Testing) engagements conducted in controlled lab environments, following industry-standard frameworks like PTES and NIST Cybersecurity Framework.
 
-## 📊 Portfolio Statistics
-- ✅ **15+ Vulnerabilities Documented**
-- ✅ **CVSS v3.1 Risk Scoring**
-- ✅ **NIST Framework Remediation**
-- ✅ **Professional Reporting Format**
-- ✅ **Exploitation Proof-of-Concept (PoC)**
+**Methodology:** Reconnaissance → Scanning → Enumeration → Exploitation → Post-Exploitation → Reporting
 
----
+## 📋 Case Studies
 
-## 🎯 Case Studies
+### 1. **Windows SMB EternalBlue Exploitation (MS17-010)**
 
-### **Case Study 1: Web Application Penetration Test**
-**Client:** E-commerce Platform (Simulated)  
-**Scope:** 5 web applications, 200+ endpoints  
-**Duration:** 2 weeks  
+**Target Environment:** Windows 7 SP1 (Unpatched)  
+**Vulnerability:** CVE-2017-0144 (CVSS 9.3 - Critical)  
+**Attack Surface:** SMB Protocol (Port 445)  
+**Tools Used:** Nmap, Metasploit Framework, Kali Linux  
+**Outcome:** Full system compromise, credential extraction, remediation roadmap
 
-| Vulnerability | CVSS Score | Impact | Status |
-|---------------|------------|---------|---------|
-| **SQL Injection** | **9.8 Critical** | Data exfiltration | ✅ Fixed |
-| **XSS (Reflected)** | **6.1 High** | Session hijacking | ✅ Fixed |
-| **Broken Access Control** | **8.1 High** | Privilege escalation | ✅ Fixed |
-| **CSRF** | **5.4 Medium** | Account takeover | ✅ Fixed |
+**What This Case Study Demonstrates:**
+- Network reconnaissance and vulnerability scanning with Nmap
+- Service enumeration and protocol analysis (SMB)
+- Remote code execution exploitation (EternalBlue)
+- Post-exploitation: privilege escalation and evidence collection
+- Business impact assessment and CVSS scoring
+- Framework-aligned remediation (NIST CSF, CIS Controls)
+- Professional client-ready reporting
 
-**Executive Summary:** Identified critical SQL injection allowing full database access. Remediation reduced attack surface by 95%.
+[→ Read Full Case Study](./case-studies/windows-ms17-010.md)
 
 ---
 
-### **Case Study 2: Network Penetration Test**
-**Client:** Corporate Network (Lab Environment)  
-**Scope:** 15 servers, 50 workstations, Active Directory  
-**Duration:** 3 weeks  
+## 🔐 Security Framework Alignment
 
-| Vulnerability | CVSS Score | Impact | Status |
-|---------------|------------|---------|---------|
-| **SMB Signing Disabled** | **9.0 Critical** | Lateral movement | ✅ Fixed |
-| **Weak RDP Passwords** | **8.8 High** | Remote access | ✅ Fixed |
-| **Unpatched Windows** | **7.8 High** | EternalBlue RCE | ✅ Fixed |
-| **Misconfigured Kerberos** | **8.1 High** | Golden Ticket | ✅ Fixed |
+Every assessment is mapped to industry standards:
 
-**Executive Summary:** Demonstrated domain compromise path via SMB relay → Kerberos ticket forging. Full remediation playbook provided.
+- **NIST Cybersecurity Framework:** Identify → Protect → Detect → Respond → Recover
+- **CIS Critical Security Controls:** Prioritized defense recommendations
+- **OWASP Principles:** Application and system security best practices
+- **PTES:** Structured penetration testing methodology
 
----
+## 🛠️ Tools & Technologies
 
-### **Case Study 3: API Security Assessment**
-**Client:** REST API Backend (Simulated)  
-**Scope:** 25 API endpoints, JWT authentication  
-**Duration:** 1 week  
+**Reconnaissance & Enumeration:**
+- Nmap (network scanning, version detection, OS fingerprinting)
+- Network reconnaissance and host discovery
 
-| Vulnerability | CVSS Score | Impact | Status |
-|---------------|------------|---------|---------|
-| **JWT None Algorithm** | **9.1 Critical** | Authentication bypass | ✅ Fixed |
-| **IDOR** | **8.2 High** | Data exposure | ✅ Fixed |
-| **Rate Limiting Bypass** | **7.5 High** | DoS + brute force | ✅ Fixed |
-| **Insecure Headers** | **5.3 Medium** | Information disclosure | ✅ Fixed |
+**Exploitation & Attack Execution:**
+- Metasploit Framework (exploit development and delivery)
+- Payload generation and management
+- Command & control operations
 
----
+**Post-Exploitation & Evidence Collection:**
+- Meterpreter shell interactions
+- Credential dumping and hash extraction
+- System information gathering
+- Forensic evidence collection
 
-## 🛠️ Methodology (NIST SP 800-115)
+**Analysis & Reporting:**
+- Wireshark (packet analysis)
+- Log analysis and review
+- Vulnerability assessment and prioritization
 
-**RECONNAISSANCE** → Nmap, Gobuster, Subdomain enumeration  
-**SCANNING** → Nessus, Nuclei, Nikto  
-**GAINING ACCESS** → Burp Suite, SQLMap, Metasploit  
-**MAINTAINING ACCESS** → Reverse shells, persistence  
-**ANALYSIS & REPORT** → CVSS scoring, remediation roadmap
+## 🎓 Certifications & Experience
 
----
+**Current Certifications:**
+- EC-Council Certified Cybersecurity Technician (C|CT) ✓ Completed
+- Certified Ethical Hacker (C|EH) - Target: December 2025
 
-## 📈 Risk Distribution (CVSS v3.1)
+**Pursuing:**
+- Certified SOC Analyst (C|SA) - Target: Feb 2026
+- Certified Incident Handler (E|CIH) - Target: Apr 2026
 
-| Severity | Count | CVSS Range | Remediation Timeline |
-|----------|-------|------------|---------------------|
-| **CRITICAL** | 5 | 9.0-10.0 | Week 1 (Immediate) |
-| **HIGH** | 10 | 7.0-8.9 | Weeks 2-4 |
-| **MEDIUM** | 8 | 4.0-6.9 | Month 2 |
-| **LOW** | 3 | 0.1-3.9 | Ongoing |
+**Academic Background:**
+- B.Tech Computer Science (3rd Year) | GD Goenka University
+- Cybersecurity Specialization
+- CGPA: 9.25/10
 
-**Total: 26 vulnerabilities** | **Risk Reduction: 93% post-remediation** [web:41][web:42]
+**Formal Training:**
+- IIT Gawahati Cybersecurity Micro-Credit Program (Dec 2024 - Present)
+  - Network security protocols, threat modeling, incident response
+  - Compliance frameworks and attack vectors
 
----
+## 📞 Contact & Professional Links
 
-## 🔧 Tools Mastered
-
-| Category | Tools |
-|----------|--------|
-| **Recon** | Nmap, Gobuster, Amass, Sublist3r |
-| **Scanning** | Nessus, Nuclei, Nikto, OpenVAS |
-| **Web** | Burp Suite, OWASP ZAP, SQLMap |
-| **Exploitation** | Metasploit, Cobalt Strike |
-| **Post-Exploitation** | PowerShell Empire, Mimikatz |
-| **Reporting** | Dradis, Faraday |
+**Email:** becomeshivamjha@gmail.com  
+**Phone:** +91-99585-16491  
+**LinkedIn:** linkedin.com/in/shivam-kumar-4a231728a/  
+**Location:** Noida, Uttar Pradesh, India
 
 ---
 
-## 📋 Sample Report Structure
-
-**Every report follows this professional format:**
-
-**1. EXECUTIVE SUMMARY**  
-- Business risk overview  
-- Priority findings  
-- Remediation timeline  
-
-**2. TECHNICAL FINDINGS**  
-- Vulnerability details  
-- Proof-of-concept  
-- CVSS scoring  
-- Attack scenario  
-
-**3. REMEDIATION**  
-- Technical fixes  
-- Configuration changes  
-- Code patches  
-- NIST control mapping  
-
-**4. APPENDICES**  
-- Full scan results  
-- Network diagrams  
-- Screenshots
-
----
-
-## 🏆 Remediation Success Rate
-
-**Pre-Remediation:** 28 vulnerabilities  
-**Post-Remediation:** 2 vulnerabilities (**93% reduction**)  
-**Risk Score Drop:** 8.7 → 3.2 (**63% improvement**)
-
----
-
-## 📈 Career Impact
-
-**Demonstrated Skills:**
-- Professional penetration testing methodology
-- CVSS v3.1 risk assessment
-- NIST-aligned remediation strategies
-- Executive communication (C-level summaries)
-- Technical reporting excellence
-
-**Target Roles:**
-- Penetration Tester
-- Security Consultant (Big 4)
-- Application Security Engineer
-- Red Team Operator
-
----
-
-## 🔗 Certifications Supporting This Work
-
-- **EC-Council C|EH** - Certified Ethical Hacker
-- **EC-Council C|CT** - Cybersecurity Technician
-- **NIST Cybersecurity Framework** - Risk Management
-- **OWASP** - Web Application Security
-
----
-
-## 🚀 Future Engagements Planned
-
-- [ ] Cloud Infrastructure Pentest (AWS/Azure)
-- [ ] Mobile Application Security Assessment
-- [ ] Wireless Network Penetration Testing
-- [ ] Red Team Engagement Simulation
-
----
-
-**Portfolio Owner:** Shivam Kumar Jha  
-**Contact:** https://www.linkedin.com/in/shivam-kumar-4a231728a/  
 **Last Updated:** December 2025
+
+*All assessments conducted in controlled lab environments with proper authorization. No live production systems were targeted.*
